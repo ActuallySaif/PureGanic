@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureGanic | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link rel="icon" href="Images/LogoWhite.svg">
+</head>
+<body>
+    <header>
+        <img src="Images/LogoGreen.svg" alt="">
+        <nav>
+            <a class="navSelected" href="#">HOME</a>
+            <a href="Products.html">PRODUCTS</a>
+            <a href="About.html">ABOUT</a>
+            <a href="Contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div id="wavesTop"></div>
+        <div class="heroText">
+            <p class="heroTag">
+                Find stillness in every sip.
+            </p>
+            <model-viewer id="bottle3dElement"
+                src="Models/JadeCalmAnim.glb" 
+                ar 
+                ar-modes="webxr scene-viewer quick-look"  
+                disable-zoom
+                tone-mapping="neutral" 
+                shadow-intensity="1" 
+                camera-orbit="97deg 79.35deg 0.8589m" 
+                field-of-view="30deg" 
+                min-camera-orbit="auto 79deg auto" 
+                max-camera-orbit="auto 79deg auto">
+                
+            </model-viewer>
+            <div class="heroDeets">
+                <div class="deet1">
+                    <img src="Images/Drop.svg" alt="">
+                    <p class="deetTitle">ingredients</p>
+                    <p class="deetText">
+                        Cucumber, Green Tea, <br>
+                        Aloe Vera, Lime, Guava, Filtered Water
+                    </p>
+                </div>
+                <div class="deet1">
+                    <img src="Images/Drop.svg" alt="">
+                    <img src="Images/Drop.svg" alt="">
+                    <p class="deetTitle">Nutrition facts</p>
+                    <p class="deetText">
+                        85 CAL • ANTIOXIDANT-RICH • <br> HYDRATING • 100% PLANT-BASED
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="viewerButtons">
+            <button id="heroCta">TASTE TRANQUILITY</button>
+            <button id="arrowRight"><img src="Images/ArrowRight.svg" alt=""></button>
+        </div>
+    </section>
+
+
+    <script src="heroRotator.js"></script>
+</body>
+</html>
