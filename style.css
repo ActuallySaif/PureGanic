@@ -4,7 +4,7 @@
     --greenText: #133630;
     --lightText: #D7E7B6;
     --whiteText: white;
-    --fontNorm: 23px;
+    --fontNorm: 20px;
     --vBigFont: 124px;
     --heroBtn1: #2A7368;
 }
@@ -27,6 +27,7 @@
 body{
     font-family: 'neue';
     position: relative;
+    background: var(--mainBg);
 }
 
 header{
@@ -38,6 +39,7 @@ header{
     left: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 4;
 }
 
 nav{
@@ -163,11 +165,22 @@ a{
 
 #wavesTop{
     width: 100vw;
-    height: 100vh;
+    height: 115vh;
     position: absolute;
     background-color: #133630;
     right: 0vw;
     z-index: 0;
     mask: url(Images/wavesTop.svg) no-repeat right;
+    box-sizing: border-box;
+}
+
+#wavesBottom{
+    width: 100vw;
+    height: 118vh;
+    position: absolute;
+    background-color: #133630;
+    left: 0vw;
+    z-index: 0;
+    mask: url(Images/wavesBottom.svg) no-repeat left;
     box-sizing: border-box;
 }

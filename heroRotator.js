@@ -1,15 +1,11 @@
-let rotateBtn = document.getElementById("arrowLeft");
-let arrowRight = document.getElementById("arrowRight");
-let rotateValue = 0;
-let model = document.getElementById("bottle3dElement");
+const model = document.querySelector('model-viewer');
+const arrowRight = document.getElementById('arrowRight');
 
+// Wait for the model to load
+model.addEventListener('load', () => {
 
-arrowRight.addEventListener("click", () => {
+  arrowRight.addEventListener('click', async () => {
+    model.play({ repetitions: 1 });
 
-  model.play({
-    repetitions: 1
   });
-
-  
-
 });
