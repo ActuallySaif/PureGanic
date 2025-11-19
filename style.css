@@ -30,6 +30,10 @@ body{
     background: var(--mainBg);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -161,6 +165,9 @@ a{
     color: var(--whiteText);
     font-family: 'neueb';
     font-size: var(--fontNorm);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 #wavesTop{
@@ -183,4 +190,8 @@ a{
     z-index: 0;
     mask: url(Images/wavesBottom.svg) no-repeat left;
     box-sizing: border-box;
+}
+
+#about{
+    
 }
