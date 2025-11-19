@@ -26,9 +26,7 @@
                 Find stillness in every sip.
             </p>
             <model-viewer id="bottle3dElement"
-                src="Models/JadeCalmAnimNewest.glb" 
-                ar 
-                ar-modes="webxr scene-viewer quick-look"  
+                src="Models/JadeCalmAnimNewest.glb"  
                 disable-zoom
                 tone-mapping="neutral" 
                 shadow-intensity="1" 
@@ -66,10 +64,26 @@
     <section id="about">
         <div id="wavesBottom"></div>
         <div class="aboutText">
-            
+            <p class="aboutTitle">
+                Nourishment, Naturally.
+            </p>
+            <p class="aboutP">
+                At PureGanic, we believe wellness starts with simplicity — honest ingredients, mindful crafting, and a deep respect for nature. Every blend and yogurt we make is sourced from sustainable farms and designed to fuel both body and mind. From vibrant superfoods to probiotic-rich yogurts, our mission is to make organic nutrition effortless, delicious, and real.
+            </p>
+        </div>
+        <div class="aboutYogurts">
+            <model-viewer id="yogurts3d"
+            src="Models/aboutyogurts.glb" 
+            tone-mapping="neutral"  
+            shadow-intensity="0" 
+            camera-orbit="79.43deg 86.46deg 4.199m" 
+            field-of-view="27deg" 
+            min-camera-orbit="79deg 86deg auto" 
+            max-camera-orbit="79deg 86deg auto"> </model-viewer>
         </div>
     </section>
 
     <script src="heroRotator.js"></script>
+    <script src="aboutScroll.js"></script>
 </body>
 </html>

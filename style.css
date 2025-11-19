@@ -5,7 +5,9 @@
     --greenText: #133630;
     --lightText: #D7E7B6;
     --whiteText: white;
-    --fontNorm: 20px;
+    --normFont: 20px;
+    --paragraphFont: 36px;
+    --secTitleFont: 64px;
     --vBigFont: 124px;
     --heroBg1: #AFD169;
     --heroBg2: #D5C093;
@@ -79,7 +81,7 @@ a{
     text-decoration: none;
     color: var(--lightText);
     padding: 20px 50px;
-    font-size: var(--fontNorm);
+    font-size: var(--normFont);
     font-family: 'neueb';
     transition: all 300ms ease;
 }
@@ -192,7 +194,7 @@ a:hover{
     border: none;
     color: var(--whiteText);
     font-family: 'neueb';
-    font-size: var(--fontNorm);
+    font-size: var(--normFont);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -223,5 +225,37 @@ a:hover{
 }
 
 #about{
-    
+     padding: 60px 120px;
+     display: flex;
+     justify-content: space-between;
+}
+
+.aboutText{
+    position: relative;
+    width: 50%;
+}
+
+.aboutYogurts{
+    width: 50%;
+    height: 646px;
+}
+
+#yogurts3d{
+    width: 100%;
+    height: 646px;
+}
+
+.aboutTitle{
+    font-size: 96px;
+    font-family: 'neueb';
+    color: var(--whiteText);
+    text-transform: uppercase;
+}
+
+.aboutP{
+    font-size: var(--paragraphFont);
+    font-weight: 700;
+    color: var(--whiteText);
+    margin-top: 60px;
+    width: 70%;
 }
