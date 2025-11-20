@@ -42,9 +42,7 @@ function decrease(numId) {
 
 count = document.getElementById(numId).innerHTML;
 count--
-document.getElementById(numId).innerHTML = count
-
-
+document.getElementById(numId).innerHTML = count;
 
 }
 
@@ -52,6 +50,6 @@ function increase(numId) {
 
 count = document.getElementById(numId).innerHTML;
 count++
-document.getElementById(numId).innerHTML = count
+document.getElementById(numId).innerHTML = count;
 
 }
