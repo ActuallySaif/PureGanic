@@ -12,10 +12,10 @@ yogurts3d.addEventListener('load', () => {
         const rect = aboutSec.getBoundingClientRect();
         const windowHeight = window.innerHeight;
 
-        let progress = 1 - (rect.bottom / (windowHeight + rect.height));
+        let progress = 1 - (rect.bottom / ((windowHeight * 2) + rect.height));
         progress = Math.min(Math.max(progress, 0), 1);
 
-        yogurts3d.currentTime = progress * animDuration
+        yogurts3d.currentTime = progress * animDuration;
 
     });
 

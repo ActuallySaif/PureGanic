@@ -77,13 +77,62 @@
             tone-mapping="neutral"  
             shadow-intensity="0" 
             camera-orbit="79.43deg 86.46deg 4.199m" 
-            field-of-view="27deg" 
+            field-of-view="22deg" 
             min-camera-orbit="79deg 86deg auto" 
             max-camera-orbit="79deg 86deg auto"> </model-viewer>
         </div>
     </section>
 
+    <section id="products">
+        <p class="secTitle">
+            our products
+        </p>
+        <div id="prodBlockId" class="prodBlock">
+                <div class="blockText">
+                    <p class="blockTitle">
+                        Nature, bottled.
+                    </p>
+                    <p class="blockP">
+                        Cold-pressed blends packed with antioxidants and adaptogens — crafted to hydrate, energize, and nourish your body with every sip.
+                    </p>
+                    <a id="prodBtn" href="Products.html">Explore Drinks</a>
+                </div>
+                <div class="drinksBlock3d">
+                    <model-viewer id="bottleReveal"
+                      src="Models/bottleReveal.glb" 
+                      tone-mapping="neutral" 
+                      poster="poster.webp" 
+                      shadow-intensity="1" 
+                      camera-orbit="89.7deg 85.27deg 1.099m" 
+                      field-of-view="30deg"> 
+                    </model-viewer>
+                </div>
+        </div>
+
+        <div id="prodBlockId" class="prodBlock2">
+                <div class="blockText">
+                    <p class="blockTitle">
+                        Wholesome, alive.
+                    </p>
+                    <p class="blockP">
+                        Superfood yogurts infused with live cultures and rich, natural flavors. Smooth texture meets gut-friendly goodness for a truly balanced treat.
+                    </p>
+                    <a id="prodBtn" href="Products.html">Explore yogurt</a>
+                </div>
+                <div class="yogurtsBlock3d">
+                    <model-viewer id="yogurtReveal"
+                      src="Models/yogurtReveal.glb" 
+                      tone-mapping="neutral" 
+                      shadow-intensity="0" 
+                      camera-orbit="-1.189deg 89.22deg 5.497m" 
+                      field-of-view="26.26deg"> 
+                    </model-viewer>
+                </div>
+        </div>
+    </section>
+
     <script src="heroRotator.js"></script>
     <script src="aboutScroll.js"></script>
+    <script src="productScroll.js"></script>
 </body>
 </html>
