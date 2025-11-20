@@ -173,6 +173,139 @@
         </div>
     </section>
 
+    <section id="shop">
+        <img class="shopTop" src="Images/shopTop.svg" alt="">
+        <p class="secTitle">
+            shop our collection
+        </p>
+        <div class="shopItems">
+            <div class="shopCard">
+                <div class="shop3d1">
+                    <model-viewer id="jadeStill" 
+                    src="Models/jadeStill.glb" 
+                    camera-controls 
+                    disable-zoom
+                    tone-mapping="neutral" 
+                    poster="poster.webp" 
+                    shadow-intensity="0" 
+                    camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                    field-of-view="30deg" 
+                    min-camera-orbit="auto 76deg auto" 
+                    max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                </div>
+                <div class="shopText">
+                    <p class="itemTitle">Jade Calm Drink</p>
+                    <p class="itemPrice">EGP 68</p>
+                </div>
+                <div id="addToCardBtn">
+                    <div id="overBtn1">
+                        add to cart
+                    </div>
+                    <div class="cartCounter">
+                        <button onclick="decrease('num1')" id="decrease">-</button>
+                        <p id="num1">1</p>
+                        <button onclick="increase('num1')" id="increase">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shopCard">
+                <div class="shop3d2">
+                    <model-viewer id="skyberryStill" 
+                    src="Models/skyberryStill.glb" 
+                    camera-controls 
+                    disable-zoom
+                    tone-mapping="neutral" 
+                    poster="poster.webp" 
+                    shadow-intensity="0" 
+                    camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                    field-of-view="30deg" 
+                    min-camera-orbit="auto 76deg auto" 
+                    max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                </div>
+                <div class="shopText">
+                    <p class="itemTitle">Skyberry  Bliss</p>
+                    <p class="itemPrice">EGP 45</p>
+                </div>
+                <div id="addToCardBtn">
+                    <div id="overBtn2">
+                        add to cart
+                    </div>
+                    <div class="cartCounter">
+                        <button onclick="decrease('num2')" id="decrease">-</button>
+                        <p id="num2">1</p>
+                        <button onclick="increase('num2')" id="increase">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shopCard">
+                <div class="shop3d3">
+                    <model-viewer id="rubyStill" 
+                    src="Models/rubyStill.glb" 
+                    camera-controls 
+                    disable-zoom
+                    tone-mapping="neutral" 
+                    poster="poster.webp" 
+                    shadow-intensity="0" 
+                    camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                    field-of-view="30deg" 
+                    min-camera-orbit="auto 76deg auto" 
+                    max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                </div>
+                <div class="shopText">
+                    <p class="itemTitle">Ruby Thrive</p>
+                    <p class="itemPrice">EGP 45</p>
+                </div>
+                <div id="addToCardBtn">
+                    <div id="overBtn3">
+                        add to cart
+                    </div>
+                    <div class="cartCounter">
+                        <button onclick="decrease('num3')" id="decrease">-</button>
+                        <p id="num3">1</p>
+                        <button onclick="increase('num3')" id="increase">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shopCard">
+                <div class="shop3d4">
+                    <model-viewer id="amberStill" 
+                    src="Models/amberStill.glb" 
+                    camera-controls 
+                    disable-zoom
+                    tone-mapping="neutral" 
+                    poster="poster.webp" 
+                    shadow-intensity="0" 
+                    camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                    field-of-view="30deg" 
+                    min-camera-orbit="auto 76deg auto" 
+                    max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                </div>
+                <div class="shopText">
+                    <p class="itemTitle">Amber Bloom</p>
+                    <p class="itemPrice">EGP 75</p>
+                </div>
+                <div id="addToCardBtn">
+                    <div id="overBtn4">
+                        add to cart
+                    </div>
+                    <div class="cartCounter">
+                        <button onclick="decrease('num3')" id="decrease">-</button>
+                        <p id="num3">1</p>
+                        <button onclick="increase('num3')" id="increase">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="cartBtn.js"></script>
     <script src="heroRotator.js"></script>
     <script src="aboutScroll.js"></script>
     <script src="productScroll.js"></script>

@@ -1,5 +1,6 @@
 :root{
     --mainBg: #D7E7B6;
+    --whiteBg: white;
     --navHover: #d7e7b670;
     --greenAccent:#133630;
     --greenText: #133630;
@@ -7,6 +8,7 @@
     --whiteText: white;
     --blackText: black;
     --normFont: 20px;
+    --itemTitleFont: 24px;
     --paragraphFont: 36px;
     --secTitleFont: 64px;
     --vBigFont: 124px;
@@ -27,6 +29,7 @@
     --heroBtn3: #5104A4;
     --heroBtn4: #8B060A;
     --prodBtnBorder: 10px solid #133630;
+    --shopCardBorder: 5px solid #133630;
 }
 
 *{
@@ -127,10 +130,10 @@ nav a:hover{
 }
 
 #heroTag{
-    width: 680px;
+    width: 40vw;
     height: 556px;
-    font-size: var(--vBigFont);
-    color: var(--greenText);
+    font-size: 6.7vw;
+    color: var(--heroBtn1);
     font-family: 'neueb';
     text-transform: uppercase;
     transition: all 300ms ease;
@@ -356,4 +359,135 @@ nav a:hover{
     outline: var(--prodBtnBorder);
     color: var(--greenText);
     transition: all 300ms linear;
+}
+
+
+#shop{
+    position: relative;
+    padding: 160px 120px;
+    background: var(--whiteBg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shopTop{
+    position: absolute;
+    left: 0;
+    top: -140px;
+    width: 100%;
+}
+
+.shopItems{
+    display: flex;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.shop3d1{
+    background-color: var(--heroBg1);
+    border: var(--shopCardBorder);
+    border-radius: 50px; 
+}
+
+.shop3d2{
+    background-color: var(--heroBg3);
+    border: var(--shopCardBorder);
+    border-radius: 50px; 
+}
+
+.shop3d3{
+    background-color: var(--heroBg4);
+    border: var(--shopCardBorder);
+    border-radius: 50px; 
+}
+
+.shop3d4{
+    background-color: var(--heroBg2);
+    border: var(--shopCardBorder);
+    border-radius: 50px; 
+}
+
+#jadeStill, #skyberryStill, #rubyStill, #amberStill{
+    height: 380px; 
+}
+
+.shopText{
+    margin-top: 20px;
+    font-family: 'neueb';
+    color: var(--greenText);
+    text-transform: uppercase;
+}
+
+.itemTitle{
+    font-size: var(--itemTitleFont);
+}
+
+.itemPrice{
+    font-size: var(--paragraphFont);
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+#addToCardBtn{
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+#overBtn1, #overBtn2, #overBtn3, #overBtn4{
+    font-family: 'neueb';
+    color: var(--whiteText);
+    text-transform: uppercase;
+    font-size: var(--normFont);
+    padding: 17px 25px;
+    background-color: var(--greenAccent);
+    text-align: center;
+    border-radius: 70px;
+    cursor: pointer;
+    width: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    transition: all 300ms ease;
+}
+
+.cartCounter{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+#decrease{
+    padding: 15px 25px;
+    font-family: 'neueb';
+    color: var(--whiteText);
+    font-size: var(--normFont);
+    background-color: var(--greenAccent);
+    text-align: center;
+    border-radius: 70px;
+    cursor: pointer;
+    border-style: none;
+}
+
+#increase{
+    padding: 15px 25px;
+    font-family: 'neueb';
+    color: var(--whiteText);
+    font-size: var(--normFont);
+    background-color: var(--greenAccent);
+    text-align: center;
+    border-radius: 70px;
+    cursor: pointer;
+    border-style: none;
+}
+
+#num1, #num2, #num3, #num4{
+    font-family: 'neueb';
+    color: var(--greenText);
+    font-size: var(--paragraphFont);
+}
+
+#decrease:active, #increase:active{
+    border-style: none;
 }
