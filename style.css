@@ -93,6 +93,15 @@ nav a:hover{
     border-radius: 100px;
 }
 
+.viewerButtons a{
+    text-decoration: none;
+    color: var(--lightText);
+    padding: 20px 50px;
+    font-size: var(--normFont);
+    font-family: 'neueb';
+    transition: all 300ms ease;
+}
+
 .navSelected{
     color: var(--greenText);
     background-color: var(--mainBg);
@@ -306,6 +315,7 @@ nav a:hover{
     color: var(--greenText);
     font-family: 'neueb';
     text-transform: uppercase;
+    width: fit-content;
 }
 
 .blockP{
@@ -316,23 +326,16 @@ nav a:hover{
     font-family: 'neueb';
 }
 
-.drinksBlock3d{
+.drinksBlock3d, .yogurtsBlock3d, .cansBlock3d, .applesBlock3d{
     width: 60%;
 }
 
-.yogurtsBlock3d{
-    width: 60%;
-}
 
-#bottleReveal{
+#bottleReveal, #yogurtReveal, #canReveal, #appleReveal{
     height: 579px;
     width: 100%;
 }
 
-#yogurtReveal{
-    height: 579px;
-    width: 100%;
-}
 
 #prodBtn{
     font-size: var(--normFont);
