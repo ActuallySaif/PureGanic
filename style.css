@@ -35,6 +35,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 @font-face {
@@ -551,8 +552,75 @@ footer{
     cursor: pointer;
 }
 
+#prodHero{
+    position: relative;
+    padding: 60px 120px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
 
-/* Media queries */
+.prodHeroBg{
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.prodHeroText{
+    position: relative;
+    z-index: 3;
+    padding: 0 40px 130px 40px;
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prodHeroTag{
+    color: var(--whiteText);
+    font-size: 6.5vw;
+    font-family: 'neueb';
+    text-transform: uppercase;
+    
+}
+
+.prodHero3d{
+    width: 50%;
+}
+
+#prodBottle{
+    width: 100%;
+    height: 720px;
+}
+
+#prodCta{
+    padding: 23px 60px;
+    background-color: var(--heroBtn1);
+    border-radius: 100px;
+    border: none;
+    color: var(--whiteText);
+    font-family: 'neueb';
+    font-size: var(--normFont);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+#prodCta:hover{
+    background: transparent;
+    outline: 10px var(--heroBtn1) solid;
+    color: var(--heroBtn1);
+}
+
+
+/* ////////////////////////////////Media queries //////////////////////////////////////// */
 
 
 @media screen and (max-width: 600px) {

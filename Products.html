@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureGanic | Products</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link rel="icon" href="Images/LogoWhite.svg">
+</head>
+<body>
+    <header>
+        <img class="LogoWhite" src="Images/LogoWhite.svg" alt="">
+        <nav>
+            <a href="index.html">HOME</a>
+            <a class="navSelected" href="Products.html">PRODUCTS</a>
+            <a href="About.html">ABOUT</a>
+            <a href="Contact.html">CONTACT</a>
+        </nav>
+        <img id="brgrMenu" src="Images/Burger.svg" alt="">
+    </header>
+
+    <main>
+        <section id="prodHero">
+            <img class="prodHeroBg" src="Images/ProductsHeroBg.svg" alt="">
+            <div class="prodHeroText">
+                <p class="prodHeroTag"> 
+                    Shop our collection
+                </p>
+                <a href="#" id="prodCta">Explore</a>
+            </div>
+            <div class="prodHero3d">
+                <model-viewer id="prodBottle"
+                 src="Models/BottleSplitAnim.glb"
+                 tone-mapping="neutral" 
+                 shadow-intensity="0" 
+                 exposure="1" 
+                 shadow-softness="0.27"  
+                 animation-name="BottleSplitNew"
+                 camera-orbit="37.54deg 102.7deg 2.854m" 
+                 field-of-view="10.11deg"></model-viewer>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="bottleSplit.js"></script>
+</body>    

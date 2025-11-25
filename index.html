@@ -20,291 +20,293 @@
         <img id="brgrMenu" src="Images/Burger.svg" alt="">
     </header>
 
-    <section id="hero">
-        <div id="wavesTop"></div>
-        <div class="heroText">
-            <p id="heroTag">
-                Find stillness in every sip.
+    <main>
+        <section id="hero">
+            <div id="wavesTop"></div>
+            <div class="heroText">
+                <p id="heroTag">
+                    Find stillness in every sip.
+                </p>
+                <model-viewer id="bottle3dElement"
+                    src="Models/JadeCalmAnimNewest.glb"  
+                    disable-zoom
+                    tone-mapping="neutral" 
+                    shadow-intensity="1" 
+                    camera-orbit="97deg 79.35deg 0.8589m" 
+                    field-of-view="30deg" 
+                    min-camera-orbit="auto 79deg auto" 
+                    max-camera-orbit="auto 79deg auto">
+                    
+                </model-viewer>
+                <div class="heroDeets">
+                    <div class="deet1">
+                        <img src="Images/Drop.svg" alt="">
+                        <p class="deetTitle">ingredients</p>
+                        <p class="deetText">
+                            Cucumber, Green Tea, <br>
+                            Aloe Vera, Lime, Guava, Filtered Water
+                        </p>
+                    </div>
+                    <div class="deet1">
+                        <img src="Images/Drop.svg" alt="">
+                        <img src="Images/Drop.svg" alt="">
+                        <p class="deetTitle">Nutrition facts</p>
+                        <p class="deetText">
+                            85 CAL • ANTIOXIDANT-RICH • <br> HYDRATING • 100% PLANT-BASED
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="viewerButtons">
+                <a href="#about" id="heroCta">TASTE TRANQUILITY</a>
+                <button id="arrowRight"><img src="Images/ArrowRight.svg" alt=""></button>
+            </div>
+        </section>
+
+        <section id="about">
+            <div id="wavesBottom"></div>
+            <div class="aboutText">
+                <p class="aboutTitle">
+                    Nourishment, Naturally.
+                </p>
+                <p class="aboutP">
+                    At PureGanic, we believe wellness starts with simplicity — honest ingredients, mindful crafting, and a deep respect for nature. Every blend and yogurt we make is sourced from sustainable farms and designed to fuel both body and mind. From vibrant superfoods to probiotic-rich yogurts, our mission is to make organic nutrition effortless, delicious, and real.
+                </p>
+            </div>
+            <div class="aboutYogurts">
+                <model-viewer id="yogurts3d"
+                src="Models/aboutyogurts.glb" 
+                tone-mapping="neutral"  
+                shadow-intensity="0" 
+                camera-orbit="79.43deg 86.46deg 4.199m" 
+                field-of-view="22deg" 
+                min-camera-orbit="79deg 86deg auto" 
+                max-camera-orbit="79deg 86deg auto"> </model-viewer>
+            </div>
+        </section>
+
+        <section id="products">
+            <p class="secTitle">
+                our products
             </p>
-            <model-viewer id="bottle3dElement"
-                src="Models/JadeCalmAnimNewest.glb"  
-                disable-zoom
-                tone-mapping="neutral" 
-                shadow-intensity="1" 
-                camera-orbit="97deg 79.35deg 0.8589m" 
-                field-of-view="30deg" 
-                min-camera-orbit="auto 79deg auto" 
-                max-camera-orbit="auto 79deg auto">
-                
-            </model-viewer>
-            <div class="heroDeets">
-                <div class="deet1">
-                    <img src="Images/Drop.svg" alt="">
-                    <p class="deetTitle">ingredients</p>
-                    <p class="deetText">
-                        Cucumber, Green Tea, <br>
-                        Aloe Vera, Lime, Guava, Filtered Water
-                    </p>
-                </div>
-                <div class="deet1">
-                    <img src="Images/Drop.svg" alt="">
-                    <img src="Images/Drop.svg" alt="">
-                    <p class="deetTitle">Nutrition facts</p>
-                    <p class="deetText">
-                        85 CAL • ANTIOXIDANT-RICH • <br> HYDRATING • 100% PLANT-BASED
-                    </p>
-                </div>
+            <div id="prodBlockId1" class="prodBlock">
+                    <div class="blockText">
+                        <p class="blockTitle">
+                            Nature, bottled.
+                        </p>
+                        <p class="blockP">
+                            Cold-pressed blends packed with antioxidants and adaptogens — crafted to hydrate, energize, and nourish your body with every sip.
+                        </p>
+                        <a id="prodBtn" href="Products.html">Explore Drinks</a>
+                    </div>
+                    <div class="drinksBlock3d">
+                        <model-viewer id="bottleReveal"
+                        src="Models/bottleReveal.glb" 
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="1" 
+                        camera-orbit="89.7deg 85.27deg 1.099m" 
+                        field-of-view="30deg"> 
+                        </model-viewer>
+                    </div>
             </div>
-        </div>
-        <div class="viewerButtons">
-            <a href="#about" id="heroCta">TASTE TRANQUILITY</a>
-            <button id="arrowRight"><img src="Images/ArrowRight.svg" alt=""></button>
-        </div>
-    </section>
 
-    <section id="about">
-        <div id="wavesBottom"></div>
-        <div class="aboutText">
-            <p class="aboutTitle">
-                Nourishment, Naturally.
+            <div id="prodBlockId2" class="prodBlock2">
+                    <div class="blockText">
+                        <p class="blockTitle">
+                            Wholesome, alive.
+                        </p>
+                        <p class="blockP">
+                            Superfood yogurts infused with live cultures and rich, natural flavors. Smooth texture meets gut-friendly goodness for a truly balanced treat.
+                        </p>
+                        <a id="prodBtn" href="Products.html">Explore yogurt</a>
+                    </div>
+                    <div class="yogurtsBlock3d">
+                        <model-viewer id="yogurtReveal"
+                        src="Models/yogurtReveal.glb" 
+                        tone-mapping="neutral" 
+                        shadow-intensity="0" 
+                        camera-orbit="-1.189deg 89.22deg 5.497m" 
+                        field-of-view="26.26deg"> 
+                        </model-viewer>
+                    </div>
+            </div>
+
+            <div id="prodBlockId3" class="prodBlock">
+                    <div class="blockText">
+                        <p class="blockTitle">
+                            Fuel your flow.
+                        </p>
+                        <p class="blockP">
+                            Plant-based shots and mixes designed for quick, natural energy — no crash, no compromise. The clean way to keep moving strong.
+                        </p>
+                        <a id="prodBtn" href="Products.html">Power Up</a>
+                    </div>
+                    <div class="cansBlock3d">
+                        <model-viewer id="canReveal"
+                        src="Models/canReveal.glb" 
+                        tone-mapping="neutral" 
+                        shadow-intensity="1" 
+                        camera-orbit="-1.189deg 89.22deg 1.076m" 
+                        field-of-view="26.26deg">
+                        </model-viewer>
+                    </div>
+            </div>
+
+            <div id="prodBlockId4" class="prodBlock2">
+                    <div class="blockText">
+                        <p class="blockTitle">
+                            Pure fruit.
+                        </p>
+                        <p class="blockP">
+                            Freshly packed seasonal fruits, preserved at peak ripeness to keep flavor and nutrients intact. Real fruit, real freshness, ready when you are.
+                        </p>
+                        <a id="prodBtn" href="Products.html">Shop Fruits</a>
+                    </div>
+                    <div class="applesBlock3d">
+                        <model-viewer id="appleReveal"
+                        src="Models/applesReveal.glb" 
+                        tone-mapping="neutral" 
+                        shadow-intensity="1" 
+                        camera-orbit="-3.56deg 73.02deg 0.4852m" 
+                        field-of-view="30deg"> 
+                        </model-viewer>
+                    </div>
+            </div>
+        </section>
+
+        <section id="shop">
+            <img class="shopTop" src="Images/shopTop.svg" alt="">
+            <p class="secTitle">
+                shop our collection
             </p>
-            <p class="aboutP">
-                At PureGanic, we believe wellness starts with simplicity — honest ingredients, mindful crafting, and a deep respect for nature. Every blend and yogurt we make is sourced from sustainable farms and designed to fuel both body and mind. From vibrant superfoods to probiotic-rich yogurts, our mission is to make organic nutrition effortless, delicious, and real.
-            </p>
-        </div>
-        <div class="aboutYogurts">
-            <model-viewer id="yogurts3d"
-            src="Models/aboutyogurts.glb" 
-            tone-mapping="neutral"  
-            shadow-intensity="0" 
-            camera-orbit="79.43deg 86.46deg 4.199m" 
-            field-of-view="22deg" 
-            min-camera-orbit="79deg 86deg auto" 
-            max-camera-orbit="79deg 86deg auto"> </model-viewer>
-        </div>
-    </section>
+            <div class="shopItems">
+                <div class="shopCard">
+                    <div class="shop3d1">
+                        <model-viewer id="jadeStill" 
+                        src="Models/jadeStill.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
 
-    <section id="products">
-        <p class="secTitle">
-            our products
-        </p>
-        <div id="prodBlockId1" class="prodBlock">
-                <div class="blockText">
-                    <p class="blockTitle">
-                        Nature, bottled.
-                    </p>
-                    <p class="blockP">
-                        Cold-pressed blends packed with antioxidants and adaptogens — crafted to hydrate, energize, and nourish your body with every sip.
-                    </p>
-                    <a id="prodBtn" href="Products.html">Explore Drinks</a>
-                </div>
-                <div class="drinksBlock3d">
-                    <model-viewer id="bottleReveal"
-                      src="Models/bottleReveal.glb" 
-                      tone-mapping="neutral" 
-                      poster="poster.webp" 
-                      shadow-intensity="1" 
-                      camera-orbit="89.7deg 85.27deg 1.099m" 
-                      field-of-view="30deg"> 
-                    </model-viewer>
-                </div>
-        </div>
-
-        <div id="prodBlockId2" class="prodBlock2">
-                <div class="blockText">
-                    <p class="blockTitle">
-                        Wholesome, alive.
-                    </p>
-                    <p class="blockP">
-                        Superfood yogurts infused with live cultures and rich, natural flavors. Smooth texture meets gut-friendly goodness for a truly balanced treat.
-                    </p>
-                    <a id="prodBtn" href="Products.html">Explore yogurt</a>
-                </div>
-                <div class="yogurtsBlock3d">
-                    <model-viewer id="yogurtReveal"
-                      src="Models/yogurtReveal.glb" 
-                      tone-mapping="neutral" 
-                      shadow-intensity="0" 
-                      camera-orbit="-1.189deg 89.22deg 5.497m" 
-                      field-of-view="26.26deg"> 
-                    </model-viewer>
-                </div>
-        </div>
-
-        <div id="prodBlockId3" class="prodBlock">
-                <div class="blockText">
-                    <p class="blockTitle">
-                        Fuel your flow.
-                    </p>
-                    <p class="blockP">
-                        Plant-based shots and mixes designed for quick, natural energy — no crash, no compromise. The clean way to keep moving strong.
-                    </p>
-                    <a id="prodBtn" href="Products.html">Power Up</a>
-                </div>
-                <div class="cansBlock3d">
-                    <model-viewer id="canReveal"
-                      src="Models/canReveal.glb" 
-                      tone-mapping="neutral" 
-                      shadow-intensity="1" 
-                      camera-orbit="-1.189deg 89.22deg 1.076m" 
-                      field-of-view="26.26deg">
-                    </model-viewer>
-                </div>
-        </div>
-
-        <div id="prodBlockId4" class="prodBlock2">
-                <div class="blockText">
-                    <p class="blockTitle">
-                        Pure fruit.
-                    </p>
-                    <p class="blockP">
-                        Freshly packed seasonal fruits, preserved at peak ripeness to keep flavor and nutrients intact. Real fruit, real freshness, ready when you are.
-                    </p>
-                    <a id="prodBtn" href="Products.html">Shop Fruits</a>
-                </div>
-                <div class="applesBlock3d">
-                    <model-viewer id="appleReveal"
-                      src="Models/applesReveal.glb" 
-                      tone-mapping="neutral" 
-                      shadow-intensity="1" 
-                      camera-orbit="-3.56deg 73.02deg 0.4852m" 
-                      field-of-view="30deg"> 
-                    </model-viewer>
-                </div>
-        </div>
-    </section>
-
-    <section id="shop">
-        <img class="shopTop" src="Images/shopTop.svg" alt="">
-        <p class="secTitle">
-            shop our collection
-        </p>
-        <div class="shopItems">
-            <div class="shopCard">
-                <div class="shop3d1">
-                    <model-viewer id="jadeStill" 
-                    src="Models/jadeStill.glb" 
-                    camera-controls 
-                    disable-zoom
-                    tone-mapping="neutral" 
-                    poster="poster.webp" 
-                    shadow-intensity="0" 
-                    camera-orbit="-0.003469deg 79.74deg 0.8589m" 
-                    field-of-view="30deg" 
-                    min-camera-orbit="auto 76deg auto" 
-                    max-camera-orbit="auto 76deg auto"></model-viewer>
-
-                </div>
-                <div class="shopText">
-                    <p class="itemTitle">Jade Calm Drink</p>
-                    <p class="itemPrice">EGP 68</p>
-                </div>
-                <div id="addToCardBtn">
-                    <div id="overBtn1">
-                        add to cart
                     </div>
-                    <div class="cartCounter">
-                        <button onclick="decrease('num1')" id="decrease">-</button>
-                        <p id="num1">1</p>
-                        <button onclick="increase('num1')" id="increase">+</button>
+                    <div class="shopText">
+                        <p class="itemTitle">Jade Calm Drink</p>
+                        <p class="itemPrice">EGP 68</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn1">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num1')" id="decrease">-</button>
+                            <p id="num1">1</p>
+                            <button onclick="increase('num1')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopCard">
+                    <div class="shop3d2">
+                        <model-viewer id="skyberryStill" 
+                        src="Models/skyberryStill.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Skyberry  Bliss</p>
+                        <p class="itemPrice">EGP 45</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn2">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num2')" id="decrease">-</button>
+                            <p id="num2">1</p>
+                            <button onclick="increase('num2')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopCard">
+                    <div class="shop3d3">
+                        <model-viewer id="rubyStill" 
+                        src="Models/rubyStill.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Ruby Thrive</p>
+                        <p class="itemPrice">EGP 45</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn3">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num3')" id="decrease">-</button>
+                            <p id="num3">1</p>
+                            <button onclick="increase('num3')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopCard">
+                    <div class="shop3d4">
+                        <model-viewer id="amberStill" 
+                        src="Models/amberStill.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Amber Bloom</p>
+                        <p class="itemPrice">EGP 75</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn4">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num4')" id="decrease">-</button>
+                            <p id="num4">1</p>
+                            <button onclick="increase('num4')" id="increase">+</button>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="shopCard">
-                <div class="shop3d2">
-                    <model-viewer id="skyberryStill" 
-                    src="Models/skyberryStill.glb" 
-                    camera-controls 
-                    disable-zoom
-                    tone-mapping="neutral" 
-                    poster="poster.webp" 
-                    shadow-intensity="0" 
-                    camera-orbit="-0.003469deg 79.74deg 0.8589m" 
-                    field-of-view="30deg" 
-                    min-camera-orbit="auto 76deg auto" 
-                    max-camera-orbit="auto 76deg auto"></model-viewer>
-
-                </div>
-                <div class="shopText">
-                    <p class="itemTitle">Skyberry  Bliss</p>
-                    <p class="itemPrice">EGP 45</p>
-                </div>
-                <div id="addToCardBtn">
-                    <div id="overBtn2">
-                        add to cart
-                    </div>
-                    <div class="cartCounter">
-                        <button onclick="decrease('num2')" id="decrease">-</button>
-                        <p id="num2">1</p>
-                        <button onclick="increase('num2')" id="increase">+</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="shopCard">
-                <div class="shop3d3">
-                    <model-viewer id="rubyStill" 
-                    src="Models/rubyStill.glb" 
-                    camera-controls 
-                    disable-zoom
-                    tone-mapping="neutral" 
-                    poster="poster.webp" 
-                    shadow-intensity="0" 
-                    camera-orbit="-0.003469deg 79.74deg 0.8589m" 
-                    field-of-view="30deg" 
-                    min-camera-orbit="auto 76deg auto" 
-                    max-camera-orbit="auto 76deg auto"></model-viewer>
-
-                </div>
-                <div class="shopText">
-                    <p class="itemTitle">Ruby Thrive</p>
-                    <p class="itemPrice">EGP 45</p>
-                </div>
-                <div id="addToCardBtn">
-                    <div id="overBtn3">
-                        add to cart
-                    </div>
-                    <div class="cartCounter">
-                        <button onclick="decrease('num3')" id="decrease">-</button>
-                        <p id="num3">1</p>
-                        <button onclick="increase('num3')" id="increase">+</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="shopCard">
-                <div class="shop3d4">
-                    <model-viewer id="amberStill" 
-                    src="Models/amberStill.glb" 
-                    camera-controls 
-                    disable-zoom
-                    tone-mapping="neutral" 
-                    poster="poster.webp" 
-                    shadow-intensity="0" 
-                    camera-orbit="-0.003469deg 79.74deg 0.8589m" 
-                    field-of-view="30deg" 
-                    min-camera-orbit="auto 76deg auto" 
-                    max-camera-orbit="auto 76deg auto"></model-viewer>
-
-                </div>
-                <div class="shopText">
-                    <p class="itemTitle">Amber Bloom</p>
-                    <p class="itemPrice">EGP 75</p>
-                </div>
-                <div id="addToCardBtn">
-                    <div id="overBtn4">
-                        add to cart
-                    </div>
-                    <div class="cartCounter">
-                        <button onclick="decrease('num4')" id="decrease">-</button>
-                        <p id="num4">1</p>
-                        <button onclick="increase('num4')" id="increase">+</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <img class="footerTop" src="Images/footerTop.svg" alt="">
