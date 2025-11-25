@@ -27,7 +27,7 @@
                 <p class="prodHeroTag"> 
                     Shop our collection
                 </p>
-                <a href="#" id="prodCta">Explore</a>
+                <a href="#shopSects" id="prodCta">Explore</a>
             </div>
             <div class="prodHero3d">
                 <model-viewer id="prodBottle"
@@ -41,8 +41,648 @@
                  field-of-view="10.11deg"></model-viewer>
             </div>
         </section>
+
+        <section id="shopSects">
+            <div id="prodBlockId1" class="prodBlock">
+                    <div class="blockText">
+                        <p class="blockTitle">
+                            Nature, bottled.
+                        </p>
+                        <p class="blockP">
+                            Cold-pressed blends packed with antioxidants and adaptogens — crafted to hydrate, energize, and nourish your body with every sip.
+                        </p>
+                        <a id="prodBtn" href="#jadeStill">Explore Drinks</a>
+                    </div>
+                    <div class="drinksBlock3d">
+                        <model-viewer id="bottleReveal"
+                        src="Models/bottleReveal.glb" 
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="1" 
+                        camera-orbit="89.7deg 85.27deg 1.099m" 
+                        field-of-view="30deg"> 
+                        </model-viewer>
+                    </div>
+            </div>
+
+            <div class="shopItems">
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="jadeStill" 
+                        src="Models/jadeStill.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Jade Calm Drink</p>
+                        <p class="itemPrice">EGP 68</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn1">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num1')" id="decrease">-</button>
+                            <p id="num1">1</p>
+                            <button onclick="increase('num1')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="skyberryStill" 
+                        src="Models/Velvet.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Velvet Berry</p>
+                        <p class="itemPrice">EGP 68</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn2">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num2')" id="decrease">-</button>
+                            <p id="num2">1</p>
+                            <button onclick="increase('num2')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="rubyStill" 
+                        src="Models/Crimson.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Crimson Thrive</p>
+                        <p class="itemPrice">EGP 68</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn3">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num3')" id="decrease">-</button>
+                            <p id="num3">1</p>
+                            <button onclick="increase('num3')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="amberStill" 
+                        src="Models/amberStill.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Amber Bloom</p>
+                        <p class="itemPrice">EGP 68</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn4">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num4')" id="decrease">-</button>
+                            <p id="num4">1</p>
+                            <button onclick="increase('num4')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- yogurts -->
+
+            <div id="prodBlockId2" class="prodBlock2">
+                    <div class="blockText">
+                        <p class="blockTitle">
+                            Wholesome, alive.
+                        </p>
+                        <p class="blockP">
+                            Superfood yogurts infused with live cultures and rich, natural flavors. Smooth texture meets gut-friendly goodness for a truly balanced treat.
+                        </p>
+                        <a id="prodBtn" href="Products.html">Explore yogurt</a>
+                    </div>
+                    <div class="yogurtsBlock3d">
+                        <model-viewer id="yogurtReveal"
+                        src="Models/yogurtReveal.glb" 
+                        tone-mapping="neutral" 
+                        shadow-intensity="0" 
+                        camera-orbit="-1.189deg 89.22deg 5.497m" 
+                        field-of-view="26.26deg"> 
+                        </model-viewer>
+                    </div>
+            </div>
+
+            <div class="shopItems">
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="rubyStill" 
+                        src="Models/rubyStill.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Ruby Thrive</p>
+                        <p class="itemPrice">EGP 45</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn1">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num5')" id="decrease">-</button>
+                            <p id="num5">1</p>
+                            <button onclick="increase('num5')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="rubyStill" 
+                        src="Models/GoldenStill.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Golden Harvest</p>
+                        <p class="itemPrice">EGP 45</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn2">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num6')" id="decrease">-</button>
+                            <p id="num6">1</p>
+                            <button onclick="increase('num6')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="rubyStill" 
+                        src="Models/skyberryStill.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Skyberry Bliss</p>
+                        <p class="itemPrice">EGP 45</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn3">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num7')" id="decrease">-</button>
+                            <p id="num7">1</p>
+                            <button onclick="increase('num7')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="rubyStill" 
+                        src="Models/SilkStill.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Amber Silk</p>
+                        <p class="itemPrice">EGP 45</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn4">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num8')" id="decrease">-</button>
+                            <p id="num8">1</p>
+                            <button onclick="increase('num8')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- energy drinks -->
+
+            <div id="prodBlockId3" class="prodBlock">
+                    <div class="blockText">
+                        <p class="blockTitle">
+                            Fuel your flow.
+                        </p>
+                        <p class="blockP">
+                            Plant-based shots and mixes designed for quick, natural energy — no crash, no compromise. The clean way to keep moving strong.
+                        </p>
+                        <a id="prodBtn" href="Products.html">Power Up</a>
+                    </div>
+                    <div class="cansBlock3d">
+                        <model-viewer id="canReveal"
+                        src="Models/canReveal.glb" 
+                        tone-mapping="neutral" 
+                        shadow-intensity="1" 
+                        camera-orbit="-1.189deg 89.22deg 1.076m" 
+                        field-of-view="26.26deg">
+                        </model-viewer>
+                    </div>
+            </div>
+
+            <div class="shopItems">
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="jadeStill" 
+                        src="Models/SurgeStill.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Solar Surge</p>
+                        <p class="itemPrice">EGP 75</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn1">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num9')" id="decrease">-</button>
+                            <p id="num9">1</p>
+                            <button onclick="increase('num9')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="jadeStill" 
+                        src="Models/BerryStill.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Sparkling berry</p>
+                        <p class="itemPrice">EGP 75</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn2">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num10')" id="decrease">-</button>
+                            <p id="num10">1</p>
+                            <button onclick="increase('num10')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="jadeStill" 
+                        src="Models/FuelStill.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Zenith Fuel</p>
+                        <p class="itemPrice">EGP 75</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn3">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num11')" id="decrease">-</button>
+                            <p id="num11">1</p>
+                            <button onclick="increase('num11')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="jadeStill" 
+                        src="Models/FocusStill.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Arctic Focus</p>
+                        <p class="itemPrice">EGP 75</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn4">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num12')" id="decrease">-</button>
+                            <p id="num12">1</p>
+                            <button onclick="increase('num12')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fruits -->
+
+            <div id="prodBlockId4" class="prodBlock2">
+                    <div class="blockText">
+                        <p class="blockTitle">
+                            Pure fruit.
+                        </p>
+                        <p class="blockP">
+                            Freshly packed seasonal fruits, preserved at peak ripeness to keep flavor and nutrients intact. Real fruit, real freshness, ready when you are.
+                        </p>
+                        <a id="prodBtn" href="Products.html">Shop Fruits</a>
+                    </div>
+                    <div class="applesBlock3d">
+                        <model-viewer id="appleReveal"
+                        src="Models/applesReveal.glb" 
+                        tone-mapping="neutral" 
+                        shadow-intensity="1" 
+                        camera-orbit="-3.56deg 73.02deg 0.4852m" 
+                        field-of-view="30deg"> 
+                        </model-viewer>
+                    </div>
+            </div>
+
+            <div class="shopItems">
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="rubyStill" 
+                        src="Models/apples.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Apples</p>
+                        <p class="itemPrice">EGP 35</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn1">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num13')" id="decrease">-</button>
+                            <p id="num13">1</p>
+                            <button onclick="increase('num13')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="rubyStill" 
+                        src="Models/Avocados.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Avocados</p>
+                        <p class="itemPrice">EGP 35</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn2">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num14')" id="decrease">-</button>
+                            <p id="num14">1</p>
+                            <button onclick="increase('num14')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="rubyStill" 
+                        src="Models/Pears.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Pears</p>
+                        <p class="itemPrice">EGP 35</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn3">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num15')" id="decrease">-</button>
+                            <p id="num15">1</p>
+                            <button onclick="increase('num15')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopCard">
+                    <div class="prodShop3d">
+                        <model-viewer id="jadeStill" 
+                        src="Models/Bananas.glb" 
+                        camera-controls 
+                        disable-zoom
+                        tone-mapping="neutral" 
+                        poster="poster.webp" 
+                        shadow-intensity="0" 
+                        camera-orbit="-0.003469deg 79.74deg 0.8589m" 
+                        field-of-view="30deg" 
+                        min-camera-orbit="auto 76deg auto" 
+                        max-camera-orbit="auto 76deg auto"></model-viewer>
+
+                    </div>
+                    <div class="shopText">
+                        <p class="itemTitle">Bananas</p>
+                        <p class="itemPrice">EGP 35</p>
+                    </div>
+                    <div id="addToCardBtn">
+                        <div id="overBtn4">
+                            add to cart
+                        </div>
+                        <div class="cartCounter">
+                            <button onclick="decrease('num16')" id="decrease">-</button>
+                            <p id="num16">1</p>
+                            <button onclick="increase('num16')" id="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
 
+    <footer>
+        <img class="footerTop" src="Images/footerTop.svg" alt="">
+        <div class="fCol">
+            <img class="logoWhite" src="Images/LogoWhite.svg" alt="">
+        </div>
+        <div class="fCol">
+            <p class="fColTitle">Explore</p>
+            <div class="fColContent">
+                <a href="index.html">Home</a>
+                <a href="Products.html">Products</a>
+                <a href="About.html">About Us</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="fCol">
+            <p class="fColTitle">Help</p>
+            <div class="fColContent">
+                <a href="#">faqs</a>
+                <a href="#">Help desk</a>
+                <a href="#">Customer support</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="fCol">
+            <p class="fColTitle">Address</p>
+            <div class="fColContent">
+                <a href="#">Knowledge city</a>
+                <a href="#">New administrive capital</a>
+                <a href="#">Cairo</a>
+                <a href="#">Egypt</a>
+            </div>
+        </div>
+        <div class="fCol">
+            <p class="fColTitle">Socials</p>
+            <div class="socials">
+                <img src="Images/IG.svg" alt="">
+                <img src="Images/fb.svg" alt="">
+                <img src="Images/tw.svg" alt="">
+            </div>
+        </div>
+    </footer>
 
+    <script src="productScroll.js"></script>
     <script src="bottleSplit.js"></script>
 </body>    
