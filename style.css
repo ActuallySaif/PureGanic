@@ -669,7 +669,7 @@ footer{
 
     .heroText{
         flex-direction: column;
-        padding: 60px 0;
+        padding: 20px 0;
         align-content: center;
         gap: 15px;
     }
@@ -849,10 +849,33 @@ footer{
         font-size: 16px;
         text-align: center;
     }
+
+    /* products breakpoints */
+
+    #prodHero{
+        flex-direction: column;
+        padding: 100px 20px 20px 20px;
+        justify-content: center;
+    }
+
+    .prodHeroText{
+        padding: 0;
+        text-align: center;
+    }
+
+    #prodBottle{
+        height: 430px;
+    }
+
+    .LogoWhite{
+        width: 40px;
+    }
 }
 
 
-@media screen and (min-width: 601px) and (max-width: 1330px) {
+
+
+@media screen and (min-width: 601px) and (max-width: 840px) {
     #hero{
         padding: 100px 20px 20px 20px;
     }
@@ -886,7 +909,203 @@ footer{
 
     .heroText{
         flex-direction: column;
-        padding: 60px 0;
+        padding: 20px 0;
+        align-content: center;
+        gap: 15px;
+    }
+
+    #bottle3dElement{
+        height: 436px;
+        margin-top: 130px;
+    }
+
+    #heroTag{
+        height: auto;
+        width: 100%;
+        text-align: center;
+        font-size: 53px;
+    }
+
+    .heroDeets{
+        text-align: center;
+        gap: 10px;
+    }
+
+    .viewerButtons{
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+    }
+
+    .deetText{
+        font-size: 14px;
+    }
+
+    .deetTitle{
+        font-size: 16px;
+    }
+
+    #heroCta{
+        font-size: 16px;
+    }
+
+     #wavesTop{
+        mask: url(Images/wavesTop.svg) no-repeat bottom;
+        height: 100vh;
+    }
+
+    #wavesBottom{
+        mask: url(Images/wavesBottom.svg) no-repeat top;
+        height: 100vh;
+    }
+
+    #about{
+        padding-top: 0;
+    }
+
+    .footerTop{
+        top: -5vw;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 120px 20px 60px 20px;
+    }
+
+    .logoWhite{
+        width: 40px;
+    }
+
+    .fColTitle{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .fColContent a{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #products{
+        margin-top: 0;
+        padding: 0 20px;
+    }
+
+    .secTitle{
+        font-size: 36px;
+    }
+
+    .prodBlock, .prodBlock2{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .blockText{
+        align-items: center;
+    }
+
+    .blockTitle{
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+        
+    }
+
+    .blockP{
+        text-align: center;
+        font-size: 16px;
+        line-height: 140%;
+        font-weight: 300;
+        width: 100%;
+    }
+
+    #prodBtn{
+        margin-top: 15px;
+        font-size: 12px;
+        padding: 13px 25px;
+    }
+
+    .drinksBlock3d, .yogurtsBlock3d, .cansBlock3d, .applesBlock3d{
+        width: 100%;
+    }
+
+    #bottleReveal{
+        height: 300px;
+    }
+
+    #yogurtReveal{
+        height: 280px;
+    }
+
+    #canReveal{
+        height: 300px;
+    }
+
+    #appleReveal{
+        height: 280px;
+    }
+
+    /* products breakpoints */
+
+    #prodHero{
+        flex-direction: column;
+        padding: 100px 20px 20px 20px;
+        justify-content: center;
+    }
+
+    .prodHeroText{
+        padding: 0;
+        text-align: center;
+    }
+
+    #prodBottle{
+        height: 430px;
+    }
+
+    .LogoWhite{
+        width: 40px;
+    }
+}
+
+@media screen and (min-width: 841px) and (max-width: 1330px) {
+    #hero{
+        padding: 100px 20px 20px 20px;
+    }
+
+    #wavesTop{
+        mask: url(Images/wavesTop.svg) no-repeat right;
+        height: 100vh;
+    }
+
+    #wavesBottom{
+        mask: url(Images/wavesBottom.svg) no-repeat top;
+        height: 100vh;
+    }
+
+    .LogoGreen{
+        width: 40px;
+    }
+
+    header{
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #brgrMenu{
+        display: block;
+    }
+
+    .heroText{
+        flex-direction: column;
+        padding: 20px 0;
         align-content: center;
         gap: 15px;
     }

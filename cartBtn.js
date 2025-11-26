@@ -2,9 +2,22 @@ let overBtn1 = document.getElementById("overBtn1");
 let overBtn2 = document.getElementById("overBtn2");
 let overBtn3 = document.getElementById("overBtn3");
 let overBtn4 = document.getElementById("overBtn4");
+let overBtn5 = document.getElementById("overBtn5");
+let overBtn6 = document.getElementById("overBtn6");
+let overBtn7 = document.getElementById("overBtn7");
+let overBtn8 = document.getElementById("overBtn8");
 let decreaseBtn = document.getElementById("decrease");
 let increaseBtn = document.getElementById("increase");
 let count;
+
+
+function btnConvert(btnId) {
+    btnId.addEventListener("click", () => {
+        btnId.style.width = "0";
+        btnId.innerHTML = ""
+        btnId.style.opacity = '0'
+    })
+}
 
 overBtn1.addEventListener('click', () => {
 

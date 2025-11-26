@@ -17,7 +17,7 @@
             <a href="About.html">ABOUT</a>
             <a href="Contact.html">CONTACT</a>
         </nav>
-        <img id="brgrMenu" src="Images/Burger.svg" alt="">
+        <img id="brgrMenu" src="Images/BurgerWhite.svg" alt="">
     </header>
 
     <main>
@@ -235,9 +235,9 @@
                         <p class="itemPrice">EGP 45</p>
                     </div>
                     <div id="addToCardBtn">
-                        <div id="overBtn1">
+                        <button onclick="btnConvert()" id="overBtn1">
                             add to cart
-                        </div>
+                        </button>
                         <div class="cartCounter">
                             <button onclick="decrease('num5')" id="decrease">-</button>
                             <p id="num5">1</p>
@@ -683,6 +683,7 @@
         </div>
     </footer>
 
+    <script src="cartBtn.js"></script>
     <script src="productScroll.js"></script>
     <script src="bottleSplit.js"></script>
 </body>    
