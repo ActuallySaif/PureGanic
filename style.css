@@ -7,6 +7,7 @@
     --lightText: #D7E7B6;
     --whiteText: white;
     --blackText: black;
+    --smallFont: 16px;
     --normFont: 20px;
     --itemTitleFont: 24px;
     --paragraphFont: 36px;
@@ -31,6 +32,9 @@
     --heroBtn4: #8B060A;
     --prodBtnBorder: 10px solid #133630;
     --shopCardBorder: 5px solid #133630;
+    --inputBorder: 2px #D7E7B6 solid;
+    --focusBorder: 2px #133630 solid;
+    --placeholder: rgba(19, 54, 48, 0.50);
 }
 
 *{
@@ -90,7 +94,7 @@ nav a{
     padding: 20px 50px;
     font-size: var(--normFont);
     font-family: 'neueb';
-    transition: all 300ms ease;
+    transition: all 200ms ease;
 }
 
 nav a:hover{
@@ -104,7 +108,7 @@ nav a:hover{
     padding: 20px 50px;
     font-size: var(--normFont);
     font-family: 'neueb';
-    transition: all 300ms ease;
+    transition: all 200ms ease;
 }
 
 .navSelected{
@@ -123,7 +127,7 @@ nav a:hover{
     background-color: var(--heroBg1);
     box-sizing: border-box;
     position: relative;
-    transition: all 300ms ease;
+    transition: all 200ms ease;
 }
 
 .heroText{
@@ -142,7 +146,7 @@ nav a:hover{
     color: var(--heroBtn1);
     font-family: 'neueb';
     text-transform: uppercase;
-    transition: all 300ms ease;
+    transition: all 200ms ease;
     position: relative;
 }
 
@@ -204,7 +208,7 @@ nav a:hover{
     border-radius: 100px;
     border: none;
     cursor: pointer;
-    transition: all 300ms ease;
+    transition: all 200ms ease;
 }
 
 #heroCta{
@@ -218,7 +222,7 @@ nav a:hover{
     cursor: pointer;
     display: flex;
     align-items: center;
-    transition: all 300ms ease;
+    transition: all 200ms ease;
 }
 
 #wavesTop{
@@ -230,7 +234,7 @@ nav a:hover{
     z-index: 0;
     mask: url(Images/wavesTop.svg) no-repeat right;
     box-sizing: border-box;
-    transition: all 300ms;
+    transition: all 200ms;
 }
 
 #wavesBottom{
@@ -364,7 +368,7 @@ nav a:hover{
     background: transparent;
     outline: var(--prodBtnBorder);
     color: var(--greenText);
-    transition: all 300ms linear;
+    transition: all 200ms linear;
 }
 
 
@@ -458,7 +462,7 @@ nav a:hover{
     width: 100%;
     position: absolute;
     box-sizing: border-box;
-    transition: all 300ms ease;
+    transition: all 200ms ease;
 }
 
 .cartCounter{
@@ -609,7 +613,7 @@ footer{
     cursor: pointer;
     display: flex;
     align-items: center;
-    transition: all 300ms ease;
+    transition: all 200ms ease;
     width: fit-content;
     margin-top: 10px;
 }
@@ -666,6 +670,84 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    color: var(--greenText);
+}
+
+.contMain{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contForm{
+    background: var(--whiteBg);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formTitle{
+    font-size: var(--paragraphFont);
+    font-family: 'neueb';
+    color: var(--greenText);
+    text-transform: uppercase;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+label{
+    font-family: 'neue';
+    font-weight: 700;
+    font-size: var(font);
+    font-size: var(--normFont);
+    color: var(--placeholder);
+}
+
+input, textarea{
+    font-family: 'neue';
+    font-size: var(--smallFont);
+    padding: 15px;
+    border-radius: 12px;
+    border: var(--inputBorder);
+    font-weight: 800;
+    color: var(--placeholder);
+}
+
+textarea{
+    height: 180px;
+}
+
+.sendBtn{
+    background: var(--greenAccent);
+    color: var(--mainBg);
+    outline-style: none;
+    font-family: 'neueb';
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 12px;
+    font-size: var(--normFont);
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.sendBtn:hover{
+    background: transparent;
+    outline: 10px var(--greenAccent) solid;
     color: var(--greenText);
 }
 
