@@ -10,6 +10,7 @@
     --normFont: 20px;
     --itemTitleFont: 24px;
     --paragraphFont: 36px;
+    --midFont: 24px;
     --secTitleFont: 64px;
     --vBigFont: 124px;
     --heroBg1: #AFD169;
@@ -503,7 +504,7 @@ nav a:hover{
 
 footer{
     background-color: var(--greenAccent);
-    padding: 160px 120px;
+    padding: 220px 120px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -627,6 +628,45 @@ footer{
     background-color: var(--whiteBg);
     border: var(--shopCardBorder);
     border-radius: 50px;
+}
+
+#contactReach{
+    padding: 190px 120px 60px 120px;
+}
+
+.contInfo{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contCard{
+    background: var(--whiteBg);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contCardTitle{
+    font-size: var(--midFont);
+    font-family: 'neueb';
+    text-transform: uppercase;
+    color: var(--greenAccent);
+    margin-top: 18px;
+}
+
+.contCardContent{
+    font-size: var(--normFont);
+    text-align: center;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--greenText);
 }
 
 
