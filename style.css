@@ -13,6 +13,7 @@
     --paragraphFont: 36px;
     --midFont: 24px;
     --secTitleFont: 64px;
+    --bigFont: 48px;
     --vBigFont: 124px;
     --heroBg1: #AFD169;
     --heroBg2: #D5C093;
@@ -888,6 +889,65 @@ textarea{
     bottom: -140px;
     right: 520px;
     width: 235px;
+}
+
+#process{
+    padding: 180px 120px;
+}
+
+.steps{
+    position: relative;
+    margin-top: 40px;
+}
+
+.processStage1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.processStage2{
+    position: absolute;
+    top: 490px;
+    left: 530px;
+    display: flex;
+    align-items: center;
+}
+
+.processStage3{
+    position: absolute;
+    top: 975px;
+    left: 82px;
+    display: flex;
+    align-items: center;
+}
+
+.processStage4{
+    position: absolute;
+    top: 1500px;
+    left: 380px;
+    display: flex;
+    align-items: center;
+}
+
+.stageText{
+    margin-left: 30px;
+}
+
+.stageTitle{
+    font-size: var(--bigFont);
+    font-family: 'neueb';
+    text-transform: uppercase;
+    color: var(--greenText);
+}
+
+.stageP{
+    width: 790px;
+    font-size: var(--itemTitleFont);
+    font-family: 'neueb';
+    margin-top: 20px;
 }
 
 /* ////////////////////////////////Media queries //////////////////////////////////////// */
