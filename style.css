@@ -814,6 +814,82 @@ textarea{
     font-size: var(--midFont);
 }
 
+#aboutHero{
+    position: relative;
+    padding: 60px 120px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.contactWaves{
+    width: 100vw;
+    height: 115vh;
+    top: 0;
+    position: absolute;
+    background-color: #0F2925;
+    right: 0vw;
+    z-index: 0;
+    mask: url(Images/contactWaves.svg) no-repeat top;
+    box-sizing: border-box;
+    transition: all 200ms;
+}
+
+.heroTitle{
+    position: relative;
+    color: var(--whiteText);
+    z-index: 3;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 120px;
+    font-size: var(--secTitleFont);
+    font-family: 'neueb';
+}
+
+.aboutHeroText{
+    position: relative;
+    z-index: 3;
+    width: 50%;
+    padding: 80px 0;
+}
+
+.aboutHeroTitle{
+    font-size: var(--secTitleFont);
+    font-family: 'neueb';
+    text-transform: uppercase;
+    color: var(--whiteText);
+    margin-bottom: 10px;
+}
+
+.aboutHeroP{
+    font-size: var(--paragraphFont);
+    color: var(--whiteText);
+    font-weight: 700;
+    line-height: 140%;
+    
+}
+
+.star1, .star2, .star3{
+    position: absolute;
+}
+
+.star1{
+    right: 92px;
+    top: 314px;
+    width: 500px;
+}
+
+.star2{
+    bottom: -110px;
+    left: 730px;
+    width: 300px;
+}
+
+.star3{
+    bottom: -140px;
+    right: 520px;
+    width: 235px;
+}
+
 /* ////////////////////////////////Media queries //////////////////////////////////////// */
 
 
@@ -990,6 +1066,18 @@ textarea{
 
     #shop{
         padding: 50px 20px 50px 20px;
+    }
+
+    #shopSects{
+        padding: 20px 20px 80px 20px;
+    }
+
+    .shopCard{
+        width: 100%;
+    }
+
+    #jadeStill, #skyberryStill, #crimsonStill, #amberStill{
+        width: 100%;
     }
 
     .shopItems{
@@ -1287,6 +1375,10 @@ textarea{
     .LogoWhite{
         width: 40px;
     }
+
+    #shopSects{
+        padding: 20px 20px 80px 20px;
+    }
 }
 
 @media screen and (min-width: 841px) and (max-width: 1330px) {
@@ -1400,5 +1492,9 @@ textarea{
     .fColContent a{
         font-size: 16px;
         text-align: center;
+    }
+
+    #shopSects{
+        padding: 20px 20px 120px 20px;
     }
 }
