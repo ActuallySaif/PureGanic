@@ -103,6 +103,10 @@ nav a:hover{
     border-radius: 100px;
 }
 
+model-viewer::part(default-progress-bar) {
+    display: none;
+}
+
 .viewerButtons a{
     text-decoration: none;
     color: var(--lightText);
@@ -1259,18 +1263,22 @@ textarea{
     }
 
     #shop{
-        padding: 50px 20px 50px 20px;
+        padding: 120px 20px 120px 20px;
     }
 
     #shopSects{
         padding: 20px 20px 80px 20px;
     }
 
+    .shopItems{
+        width: 100%;
+    }
+
     .shopCard{
         width: 100%;
     }
 
-    #jadeStill, #skyberryStill, #crimsonStill, #amberStill{
+    #jadeStill, #skyberryStill, #crimsonStill, #amberStill, #rubyStill{
         width: 100%;
     }
 
@@ -1285,6 +1293,10 @@ textarea{
     .itemPrice{
         font-size: 24px;
         margin-top: 10px;
+    }
+
+    .shop3d1{
+        width: 100%;
     }
 
     #addToCartBtn{
