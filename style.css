@@ -653,6 +653,7 @@ footer{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    border: var(--focusBorder);
 }
 
 .contCardTitle{
@@ -686,6 +687,7 @@ footer{
     display: flex;
     flex-direction: column;
     width: 100%;
+    border: var(--focusBorder);
 }
 
 .formTitle{
@@ -751,6 +753,66 @@ textarea{
     color: var(--greenText);
 }
 
+#faqs{
+    padding: 60px 120px 180px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#faqs .secTitle{
+    margin-bottom: 40px;
+}
+
+.faq{
+    position: relative;
+    cursor: pointer;
+}
+
+.question{
+    padding: 26px;
+    font-size: var(--paragraphFont);
+    text-transform: uppercase;
+    font-family: 'neueb';
+    color: var(--greenText);
+    background-color:var(--whiteBg);
+    border-radius: 40px;
+    border: var(--shopCardBorder);
+    position: relative;
+    z-index: 3;
+}
+
+.answer{
+    padding: 120px 26px 26px 26px;
+    background-color: var(--greenAccent);
+    color: var(--whiteText);
+    border-radius: 40px;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    top: -121px;
+    opacity: 0;
+    transition: all 200ms ease;
+    pointer-events: none;
+}
+
+.faq:hover .answer{
+    top: 0;
+    opacity: 1;
+    position: relative;
+    top: -80px;
+    margin-bottom: -90px;
+}
+
+.answerTitle{
+    font-family: 'neueb';
+    font-size: var(--paragraphFont);
+    margin-bottom: 10px;
+}
+
+.answerP{
+    font-size: var(--midFont);
+}
 
 /* ////////////////////////////////Media queries //////////////////////////////////////// */
 
@@ -991,6 +1053,40 @@ textarea{
 
     .LogoWhite{
         width: 40px;
+    }
+
+    /* contact breakpoints */
+
+    #contactReach{
+        padding: 100px 20px 20px 20px;
+    }
+
+    .contInfo{
+        flex-wrap: wrap;
+    }
+
+    .contCard{
+        width: 100%;
+    }
+
+    #faqs{
+        padding: 20px 20px 180px 20px;
+    }
+
+    #faqs .secTitle{
+        margin-bottom: 20px;
+    }
+
+    .question{
+        font-size: 24px;
+    }
+
+    .answerTitle{
+        font-size: 24px;
+    }
+
+    .answerP{
+        font-size: 18px;
     }
 }
 
